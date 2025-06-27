@@ -1,0 +1,13 @@
+{
+ "files": [
+  {
+   "file_name": "./tdd/test_generate_card.py",
+   "errors": [
+    "tdd/generate_card.py:16:4: R1705: Unnecessary \"else\" after \"return\", remove the \"else\" and de-indent the code inside it (no-else-return)",
+    "tdd/generate_card.py:40:13: R1714: Consider merging these comparisons with 'in' by using 'number in ('J', 'Q', 'K')'. Use a set instead if elements are hashable. (consider-using-in)"
+   ],
+   "score": 92.3
+  }
+ ],
+ "average_score": 92.3
+}
