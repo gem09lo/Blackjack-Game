@@ -19,20 +19,20 @@ The project uses procedural Python and includes clean code principles, test-driv
 
 ## 🗂️ Project Structure
 
-blackjack/
+#### [blackjack/]
 - `blackjack.py`: Main game logic
-- support/
+- [support/]
   - `testing_util.py`: Support functions for unit testing
 - `test_blackjack_coaches.py`: Coach-provided test cases
 - `test_blackjack_trainees.py`: Developer-written test cases
 
-tdd_prototype/ (Optional) TDD practice folder
+#### [tdd_prototype/] (Optional) TDD practice folder
 ├── `generate_card.py`: Initial TDD implementation for card logic
 └── `test_generate_card.py`: Unit tests for card logic
 
-`README.md`: Project documentation
-`requirements.txt`: Python dependencies
-`.gitignore`: Git ignore rules
+- `README.md`: Project documentation
+- `requirements.txt`: Python dependencies
+- `.gitignore`: Git ignore rules
 
 ## ⚙️ Getting Setup
 1. Clone the Repo:
