@@ -1,56 +1,81 @@
-[![badge](./.github/badges/code_quality.svg)](./code_review/report.json)
-[![badge](./.github/badges/total_errors.svg)](./code_review/report.json)
+### 🃏 Blackjack Game (Python CLI Project)
 
-# 🧑‍💻 Sigma Labs Coursework
+## 📖 Overview
+This is a command-line Blackjack game developed as part of the Week 1 Python Fundamentals module during the Sigma Labs Data Engineering program.
 
-## 🛠️ Getting Setup
+The project uses procedural Python and includes clean code principles, test-driven development (TDD), and code quality best practices. It provides a simplified single-player version of Blackjack (player vs dealer) and serves as an early demonstration of software engineering fundamentals like version control, automated testing, and Pylint compliance.
 
-1. **Fork** this Repository to your Github Account
-2. **Enable Workflows** on your cloned Repository. See the below image for how to do this.
-3. **Clone** your Repository to your laptop
-4. **Open** this folder in VSCode
+## 🎯 Project Aims
+- Build a working CLI Blackjack game using core Python.
 
-<img width="700px" src="https://i.imgur.com/eGyISm9.png" />
+- Practice test-driven development (TDD) with `pytest`.
 
-## 🗂️ Files Explained
+- Follow clean code principles (e.g., readability, naming, single responsibility).
 
-In this Repository you will find all of the materials for this week of the course.
+- Structure a Python project using modules and maintainable test files.
 
-As well as your coursework files you'll find some additional files
+- Prepare code for code reviews using Pylint and automated testing.
 
-- `README.md`
-  - This is the file you are currently reading
-- `.gitignore`
-  - This file is used to tell Git what files to ignore for any changes. This can be safely ignored.
-- `.prettierrc`
-  - This file is used to configure Prettier, an automated formatter that we suggest you install. This can be safely ignored.
-- `.eslintrc.json` and `pylintrc`
-  - Used to ensure that your code is following good style guides
 
-You'll also find some folders:
+## 🗂️ Project Structure
 
-- `.utils` folder
-  - Some config files to help us to test your code
-- `.github` folder
-  - Configuration files used by Github
-- `code_review` folder
-  - Outputs of our automated code reviews. [See below](#code-review-folder) for more details.
-- `.vscode` folder
-  - This folder contains settings and config files for VSCode. They can be safely ignored.
+blackjack/
+├── `blackjack.py`: Main game logic
+├── support/
+│   └── `testing_util.py`: Support functions for unit testing
+├── `test_blackjack_coaches.py`: Coach-provided test cases
+└── `test_blackjack_trainees.py`: Developer-written test cases
 
-Any other files or folder found here **are** relevant for your coursework.
+tdd_prototype/ (Optional) TDD practice folder
+├── `generate_card.py`: Initial TDD implementation for card logic
+└── `test_generate_card.py`: Unit tests for card logic
 
-## ✅ Code Review Folder
+`README.md`: Project documentation
+`requirements.txt`: Python dependencies
+`.gitignore`: Git ignore rules
 
-Every time you commit your code to Github, we will run a suite of tests to ensure that you code is of high quality.
+## ⚙️ Getting Setup
+1. Clone the Repo:
+   - `git clone https://github.com/your-username/blackjack-game.git`
+   - `cd blackjack-game`
+2. Set Up a Virtual Environment (Optional but Recommended)
+   - `python -m venv .venv`
+   - `source .venv/bin/activate`
+3. Install Dependencies:
+   - `pip install -r requirements.txt`
+4. Run the Game:
+   - `python blackjack/blackjack.py`
+5. Run Tests:
+   - `pytest blackjack/`
 
-It's worth noting - this **does not evaluate the quality of your solution**. Think of it as evaluating the 'grammar' and 'spelling' of your code rather than the actual quality of the work you've done.
+## 🧪 Testing
+The game includes unit tests written with pytest. Some test cases were provided by coaches, and additional tests were written during development to support TDD. Utility functions used in testing are stored in `support/testing_util.py`.
 
-Inside this folder you'll find two files
+## 📏 Code Quality
+This project adheres to Python best practices using:
 
-- `report.txt`
-  - A plain text version of your code quality
-- `report.json`
-  - A computer-friendly version of your code quality, including your 'Code Quality Score'
+- **Pylint** for style and linting (minimum score target: 9.5/10).
 
-Consistently keeping your score high will make your code easier to read and understand.
+- **pytest** for automated unit testing.
+
+- **Clean code conventions**: meaningful naming, modular functions, readable logic.
+
+
+## 🧠 What I Learned
+- Writing procedural Python in a structured and modular way.
+
+- Using test-driven development to build features incrementally.
+
+- Applying Git version control and ignoring unnecessary files.
+
+- Reading Pylint output to improve code quality and readability.
+
+- Creating and interpreting pytest assertions to validate logic.
+
+
+## 📎 Notes
+- This game was the first project in a 15-week full-time software engineering bootcamp.
+
+- All logic was written using standard Python — no external game libraries were used.
+
+- The .venv/ folder is excluded from version control using .gitignore.
