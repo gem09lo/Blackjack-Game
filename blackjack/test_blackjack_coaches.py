@@ -108,24 +108,17 @@ def test_points_two_aces_plus_one():
 Testing gameplay
 """
 
-##
-
 
 def test_player_turn_output_hitting(monkeypatch, capsys):
     """player_turn(): choosing to hit outputs a "Hitting" message"""
 
-    # The choices that a player will make during the game
     player_chooses(["hit", "stick"], monkeypatch)
 
-    # Start our game with the given seed
-    # All printed lines will be stored inside captured_output in a single string
     play(389813913)
 
-    # Split the messages received into a list of individual lines
     captured_output = capsys.readouterr().out
     printed_lines = captured_output.split("\n")
 
-    # Check that the word Hitting is in the list
     assert "Hitting" in printed_lines
 
 

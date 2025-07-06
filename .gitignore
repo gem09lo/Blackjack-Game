@@ -83,10 +83,15 @@ yarn-error.log*
 package-lock.json
 
 __pycache__
+__pycache__/
 .ipynb_checkpoints
+.ipynb_checkpoints/
 venv/
 .pytest_cache
+.pytest_cache/
 
 .terraform
 
 .venv
+.venv/
+venv/

@@ -7,30 +7,37 @@ from support.testing_util import player_chooses
 
 
 def test_points_for_valid():
+    """Tests calculates the amount of points for a given list of cards correctly"""
     assert points_for(["7H", "2D"]) == 9
 
 
 def test_points_for_empty():
+    """Tests calculates the amount of points for a given list of cards incorrectly"""
     assert points_for([]) == 0
 
 
 def test_points_for_one_card_invalid():
+    """Tests one card in list is invalid"""
     assert points_for(["8H"]) == 0
 
 
 def test_points_for_two_aces():
+    """Tests two ace cards returns 21 points"""
     assert points_for(["AH", "AD"]) == 21
 
 
 def test_points_for_six_card_draw():
+    """Tests six cards in a deck returns 21"""
     assert points_for(["2H", "6D", "2D", "3S", "2C", "3H",]) == 21
 
 
 def test_points_for_two_aces_plus_one():
+    """Tests a list of cards including two ace cards calculate points correctly"""
     assert points_for(["4H", "AD", "AS"]) == 26
 
 
 def test_get_next_card_from_deck_valid():
+    """Gets the next card from the deck and returns it correctly"""
     assert get_next_card_from_deck(["8H", "9S", "JD"]) == "8H"
 
 
