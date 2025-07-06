@@ -27,8 +27,8 @@ The project uses procedural Python and includes clean code principles, test-driv
 - `test_blackjack_trainees.py`: Developer-written test cases
 
 #### [tdd_prototype/] (Optional) TDD practice folder
-├── `generate_card.py`: Initial TDD implementation for card logic
-└── `test_generate_card.py`: Unit tests for card logic
+- `generate_card.py`: Initial TDD implementation for card logic
+- `test_generate_card.py`: Unit tests for card logic
 
 - `README.md`: Project documentation
 - `requirements.txt`: Python dependencies
