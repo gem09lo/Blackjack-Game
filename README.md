@@ -20,11 +20,11 @@ The project uses procedural Python and includes clean code principles, test-driv
 ## 🗂️ Project Structure
 
 blackjack/
-├── `blackjack.py`: Main game logic
-├── support/
-│   └── `testing_util.py`: Support functions for unit testing
-├── `test_blackjack_coaches.py`: Coach-provided test cases
-└── `test_blackjack_trainees.py`: Developer-written test cases
+- `blackjack.py`: Main game logic
+- support/
+  - `testing_util.py`: Support functions for unit testing
+- `test_blackjack_coaches.py`: Coach-provided test cases
+- `test_blackjack_trainees.py`: Developer-written test cases
 
 tdd_prototype/ (Optional) TDD practice folder
 ├── `generate_card.py`: Initial TDD implementation for card logic
